@@ -1,0 +1,6 @@
+1. Ask user to enter distance traveled in miles
+2. Ask user to enter time taken in hours
+3. Calculate mph, miles/hour
+4. Calculate kph, mph*1.60934
+5. Display mph
+6. Display kph
