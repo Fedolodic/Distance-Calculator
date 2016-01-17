@@ -25,6 +25,7 @@ int main()
     
     // Get hours from user
     cout << "Please enter time taken in hours: ";
+    
     cin >> hours;
     
     // Calculate mph and kph
