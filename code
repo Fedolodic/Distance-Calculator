@@ -1,0 +1,50 @@
+//  Distance Calculator
+//
+//  Created by David Martinez on 1/17/16.
+//  Copyright © 2016 Joenteny David Martinez. All rights reserved.
+//
+//  Description:
+//  Calculates mph and kpm based on miles and time, in hours, input
+
+#include <iostream>
+
+using namespace std;
+
+double calculatemph(double, double);    // calculatemph function prototype
+
+int main()
+{
+    double miles;   // miles is a type of double
+    double hours;   // hours is a type of double
+    double mph;     // mph is a type of double
+    double kph;     // kph is a type of double
+    
+    // Get miles from user
+    cout << "Please enter distance traveled in miles: ";
+    cin >> miles;
+    
+    // Get hours from user
+    cout << "Please enter time taken in hours: ";
+    cin >> hours;
+    
+    // Calculate mph and kph
+    mph = calculatemph(miles, hours);
+    kph = mph * 1.60934;
+    
+    // Display mph and kph
+    cout << "Your miles per hour is " << mph << " mph" << endl;
+    cout << "Your kilometers per hour is " << kph << " kph" << endl;
+    
+    return 0;
+}   // End of function main ()
+
+double calculatemph(double miles, double hours)
+{
+    double mph; // mph is a type of double
+    
+    // Calculate mph
+    mph = miles/hours;
+    
+    // Return mph
+    return mph;
+}   // End of functin calculatemph ()
